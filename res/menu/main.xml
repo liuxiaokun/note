@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add_note"
+        android:icon="@drawable/caidan_tianjia_hui"
+        android:title="@string/add_note"/>
+    <item
+        android:id="@+id/menu_new_folder"
+        android:icon="@drawable/caidan_xinjianfenzu_hui"
+        android:title="@string/new_folder"/>
+    <item
+        android:id="@+id/menu_move_folder"
+        android:icon="@drawable/caidan_yidong_hui"
+        android:title="@string/move_to_folder"/>
+    <item
+        android:id="@+id/menu_del_note"
+        android:icon="@drawable/caidan_shanchu_hui"
+        android:title="@string/delete"/>
+    <item
+        android:id="@+id/menu_export"
+        android:icon="@drawable/caidan_shuchu_hui"
+        android:title="@string/export_text_file"/>
+    <item
+        android:id="@+id/menu_backup"
+        android:icon="@drawable/caidan_beifen_hui"
+        android:title="@string/backup_data"/>
+    <item
+        android:id="@+id/menu_store"
+        android:icon="@drawable/caidan_huanyuan_hui"
+        android:title="@string/restore_from_SD"/>
+    <item
+        android:id="@+id/set_pwd_dialog"
+        android:icon="@drawable/caidan_mima_hui"
+        android:title="@string/set_password"/>
+    <item
+        android:id="@+id/shared_to_friends"
+        android:icon="@drawable/fenxianggeihaoyou_hui"
+        android:title="@string/more_comment"/>
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/guanyu_hui"
+        android:title="@string/about"/>
+
+</menu>

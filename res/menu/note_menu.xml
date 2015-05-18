@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add_note"
+        android:icon="@drawable/caidan_tianjia_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/add_note"/>
+    <item
+        android:id="@+id/remind_me"
+        android:icon="@drawable/caidan_tixing_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/remind_me"/>
+    <item
+        android:id="@+id/font_size"
+        android:icon="@drawable/zitidaxiao_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/font_size"/>
+    <item
+        android:id="@+id/delete_note"
+        android:icon="@drawable/caidan_shanchu_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/delete"/>
+    <item
+        android:id="@+id/go_manifest"
+        android:icon="@drawable/caidan_checklist_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/go_manifest"/>
+    <item
+        android:id="@+id/add_desktop"
+        android:icon="@drawable/caidan_zhuomian_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/add_desktop"/>
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/caidan_fenxing_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/share"/>
+
+</menu>

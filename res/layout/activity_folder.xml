@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <LinearLayout
+        android:id="@+id/folder_header"
+        android:layout_width="match_parent"
+        android:layout_height="65.33dp"
+        android:background="@drawable/beijing_toubu"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52.66dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/folder_name"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="13.0dp"
+                android:textColor="#ffead1ae"
+                android:textSize="24.0sp" />
+
+            <ImageButton
+                android:id="@+id/folder_add_note"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_main_head"
+                android:contentDescription="@string/tips" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_folder_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/folder_header"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/note_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_folder_items"
+        android:background="@drawable/biaoqian_touying"
+        android:contentDescription="@string/tips" />
+
+    <!-- modify folder UI -->
+
+    <LinearLayout
+        android:id="@+id/modify_folder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/fenzuditu"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6.5dp"
+            android:gravity="center"
+            android:text="@string/modify_folder"
+            android:textSize="24.0sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_folder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40.0dp"
+                android:layout_marginRight="40.0dp"
+                android:gravity="center"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:orientation="horizontal"
+            android:paddingLeft="7.0dp"
+            android:paddingRight="7.0dp" >
+
+            <Button
+                android:id="@+id/modify_folder_name_complete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/btn_folder_confirm"
+                android:text="@string/complete"
+                android:textColor="#cc000000"
+                android:textSize="20.0sp" />
+
+            <Button
+                android:id="@+id/modify_folder_name_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/btn_folder_cancel"
+                android:text="@string/cancel"
+                android:textColor="#cc000000"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- delete note UI -->
+
+    <LinearLayout
+        android:id="@+id/del_folder_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/anniubeijing"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/del_folder_note_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_delete"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/del_folder_note_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_folder_cancel"
+            android:gravity="center"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+    <!-- move out of folder -->
+
+    <LinearLayout
+        android:id="@+id/move_out_of_folder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/anniubeijing"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/move_out_folder_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_folder_cancel"
+            android:gravity="center"
+            android:text="@string/move_out_folder" />
+
+        <Button
+            android:id="@+id/move_out_folder_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_folder_cancel"
+            android:gravity="center"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</RelativeLayout>

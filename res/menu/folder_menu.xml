@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/folder_add_note"
+        android:icon="@drawable/caidan_tianjia_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/add_note"/>
+    <item
+        android:id="@+id/modify_folder"
+        android:icon="@drawable/caidan_bianjifenzu_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/modify_folder"/>
+    <item
+        android:id="@+id/move_out_folder"
+        android:icon="@drawable/caidan_yidong_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/move_out_folder"/>
+    <item
+        android:id="@+id/folder_delete_note"
+        android:icon="@drawable/caidan_shanchu_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/delete"/>
+    <item
+        android:id="@+id/add_desktop"
+        android:icon="@drawable/caidan_zhuomian_hui"
+        android:textColor="#ff4b4b4b"
+        android:title="@string/add_desktop"/>
+</menu>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notes_background" >
+
+    <LinearLayout
+        android:id="@+id/addnote_head"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="26.0dip"
+        android:layout_gravity="top"
+        android:layout_marginTop="10.0dip" >
+
+        <TextView
+            android:id="@+id/add_note_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8.0dip"
+            android:textColor="#66333333"
+            android:textSize="13.0sp" />
+
+        <ImageButton
+            android:id="@+id/remind_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/tixing_2"
+            android:contentDescription="@string/tips"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/remind_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="8.0dip"
+            android:textColor="#66333333"
+            android:textSize="13.0sp" />
+
+        <ImageButton
+            android:id="@+id/btn_changecolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="8.0dip"
+            android:background="@drawable/notes_btn_changecolors"
+            android:contentDescription="@string/tips" />
+    </LinearLayout>
+
+    <!-- edit -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left|center"
+        android:layout_marginTop="36.0dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:gravity="top|left|center"
+                android:inputType="text"
+                android:lineSpacingMultiplier="1.2"
+                android:minLines="12"
+                android:textColor="#ff4b4b4b"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/notes_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="36.0dp"
+        android:gravity="top|left"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:id="@+id/color_board"
+        android:layout_width="wrap_content"
+        android:layout_height="66.0dip"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="70.0dip"
+        android:background="@drawable/zhengwen_xuanyanse"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/current_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/zhengwen_xuanyanse_dangqian_bai"
+            android:contentDescription="@string/tips"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/current_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/zhengwen_xuanyanse_dangqian_bai"
+            android:contentDescription="@string/tips"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/current_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/zhengwen_xuanyanse_dangqian_bai"
+            android:contentDescription="@string/tips"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/current_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/zhengwen_xuanyanse_dangqian_bai"
+            android:contentDescription="@string/tips"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/current_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/zhengwen_xuanyanse_dangqian_bai"
+            android:contentDescription="@string/tips"
+            android:scaleType="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adjust_font"
+        android:layout_width="250.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="70.0dip"
+        android:background="@drawable/vol_bg"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <SeekBar
+            android:id="@+id/seekbar_font"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

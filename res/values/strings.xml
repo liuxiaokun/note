@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiNote</string>
+    <string name="my_note">我的便签</string>
+    <string name="add_note">新建便签</string>
+    <string name="new_folder">新建文件夹</string>
+    <string name="move_to_folder">移进文件夹</string>
+    <string name="delete">删除</string>
+    <string name="export_text_file">输出TXT文本</string>
+    <string name="backup_data">备份数据</string>
+    <string name="restore_from_SD">从SD卡还原</string>
+    <string name="about">关于</string>
+    <string name="more_comment">更多推荐</string>
+    <string name="set_password">设置密码</string>
+    <string name="tips">稍等</string>
+    <string name="confirm">确定</string>
+    <string name="complete">完成</string>
+    <string name="cancel">取消</string>
+    <string name="xiaomi_note">小米便签</string>
+    <string name="version">v1.5.1</string>
+    <string name="commend">推荐更多好友</string>
+    <string name="about_text">新增功能:\n
+-智能识别电话，网址，邮箱,长按可进入对应软件操作。\n
+-正文清单模式，并可以红色标注。\n
+-桌面Widget可选择颜色，并增加大尺寸。\n
+-可自由定义字体大小。\n
+-支持中文简/繁体及英文。\n
+小米工作室 www.xiaomi.com </string>
+    <string name="remind_me">提醒我</string>
+    <string name="font_size">字体大小</string>
+    <string name="go_manifest">进入清单模式</string>
+    <string name="add_desktop">添加到桌面</string>
+    <string name="share">分享</string>
+    <string name="modify_folder">修改文件夹</string>
+    <string name="move_out_folder">移出文件夹</string>
+    <string name="password">密码</string>
+    <string name="tip_create_ntoe">没有关联便签，点击新建便签</string>
+
+</resources>
